@@ -1,0 +1,67 @@
+1.进入到CentOS中，输入密码时，默认是不显示的（不论是*还是别的，其实是输入成功了）若输入错误，可以按Backspace 重新输入
+
+2、登录shell与非登陆shell  
+    登陆shell通常指的是：
+
+    1、用户通过输入用户名／密码（或证书认证）后启动的shell；
+
+    2、通过带有－l｜－－login参数的bash命令启动的shell。
+
+    例如，系统启动、远程登录、使用su－切换用户、通过bash－－login命令启动bash等。
+
+    而其他情况启动的shell基本上就都是“非登陆shell”了。
+
+    例如，从图形界面启动终端、使用su切换用户、通过bash命令启动bash等。
+
+3、用户管理的一项重要内容是用户口令的管理。用户账号刚创建时没有口令，但是被系统锁定，无法使用，必须为其指定口令后才可以使用，即使是指定空口令。
+
+指定和修改用户口令的Shell命令是passwd。超级用户可以为自己和其他用户指定口令，普通用户只能用它修改自己的口令。
+
+4、查看用户属性：cat /etc/passwd。  /etc/passwd文件是用户管理工作涉及的最重要的一个文件。
+                Linux系统中的每个用户都在/etc/passwd文件中有一个对应的记录行，它记录了这个用户的一些基本属性。
+                这个文件对所有用户都是可读的。它的内容类似下面的例子：
+                    root:x:0:0:Superuser:/:
+                    daemon:x:1:1:System daemons:/etc:
+                    bin:x:2:2:Owner of system commands:/bin:
+                    用户名:口令:用户标识号:组标识号:注释性描述:主目录:登录Shell
+                    Shell是用户与Linux系统之间的接口。Linux的Shell有许多种，每种都有不同的特点。
+                    常用的有sh(Bourne Shell), csh(C Shell), ksh(Korn Shell), tcsh(TENEX/TOPS-20 type C Shell), bash(Bourne Again Shell)等。
+                    系统管理员可以根据系统情况和用户习惯为用户指定某个Shell。如果不指定Shell，那么系统使用sh为默认的登录Shell，即这个字段的值为/bin/sh。
+                    用户的登录Shell也可以指定为某个特定的程序（此程序不是一个命令解释器）。
+                    利用这一特点，我们可以限制用户只能运行指定的应用程序，在该应用程序运行结束后，用户就自动退出了系统。
+                    有些Linux 系统要求只有那些在系统中登记了的程序才能出现在这个字段中。
+
+Linux分盘：swap  虚拟内存  当内存不够时使用它
+
+
+VM16激活码：
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+YF390-0HF8P-M81RQ-2DXQE-M2UT6
+ZF71R-DMX85-08DQY-8YMNC-PPHV8
+
+
+eclipse中的lib和referenced libraries的关系
+
+springboot2：https://blog.csdn.net/u011863024/article/details/113667634#01SpringBoot2_18
+git：https://blog.csdn.net/Augenstern_QXL/article/details/120110816
+
+eclipse   build Path: https://www.cnblogs.com/zhanghongqiang/p/4431198.html
+
+为什么将项目放到Tomcat的webapps下
+
+codeInWord：http://www.codeinword.com/
+            http://word.wd1x.com/
+            这种方法是用notepad++完成，效果非常好
+a.在notepad++打开写的代码，然后选择Plugins→NppExport→Copy all formats to clipboard，这样就能够把当前选中的代码保持最原始的样式复制粘贴到word中
+
+当你有服务时，别人可以通过你的IP访问你的服务
+
+学习文档网站：MDN   https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
+        react的this的绑定的使用：使用实验性的 public class fields 语法  
+
+默认的HTML表单行为？
+
+react  training  ：https://reacttraining.com/corporate-training
+
+VScode实用插件:https://blog.csdn.net/weixin_39689394/article/details/112187960
+
